@@ -1,4 +1,4 @@
-# Foocbank Project 
+# Foodbank Project 
 This project consist of HTML, CSS, PHP and MySQL. Its was completed with my other 5 teammates during my first year, semester 3 in Diploma. This website is design for people to do donation for foodbanks.
 Users can choose from a selection of foodbanks to donate. Their details are to be recorded in our database. 
 
