@@ -1,0 +1,258 @@
+* { box-sizing: border-box; }
+
+html, body {
+    background-color: #ffffff;
+    font-family: 'Poppins';/* Lucida Bright */
+    margin: 0;
+    padding: 0;
+} 
+
+/* HEADER */
+.header{
+    overflow: hidden;
+    background-color: #1b1b1b;
+    position: fixed;
+    width: 100%;
+    float: left;
+    display: block;
+    z-index: 999;
+}
+.header .logo{
+    height: 6em;
+    width: 6em;
+    float: left;
+    display: block;
+} 
+.logo:hover{
+    opacity: 0.5;
+}
+.header a{
+    text-decoration: none;
+}
+.header a h1{
+    margin-top: 0.2em;
+    color: #ffa31a;
+    padding-top: 0.2em;
+    padding-left: 4em;
+}
+
+/* Top Navigation*/
+.topnav {
+    overflow: hidden;
+    background-color: #292929;
+    position: fixed;
+    top: 4.5em;
+    width: 100%;
+    z-index: 999;
+}
+.topnav a {
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 10px 4px;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+}
+.topnav a.active {
+    background-color: #ffa31a; 
+    color: #292929;
+    
+}
+.topnav a:hover {
+    background-color: #ffa31a; 
+    color: #292929;
+}
+
+/* Body */
+.content{   
+    width: 90%;
+    padding-top: 8em;
+}
+
+.image1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.image1 .center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image1 .center-text button{
+    margin: 1em;
+    background-color: #ffa31a;
+    padding: 1em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 1em;
+}
+
+
+/* Body */
+.card {
+    margin-top: 1.22em;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fbcard {
+    margin-top: 1.22em;
+    padding: 1em 4em;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.content .fbcard a{
+    text-decoration: none;
+    color: black;
+}
+.content .fbcard a hr {
+    border: 1px solid black; 
+}
+
+/* Clear floats after the columns */
+/*.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+/*Footer*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #1b1b1b;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer a {
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+/*SMALL NAVIGATION*/
+.smallNav {
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: arial;
+}
+.smallNav:hover {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.follow-us-container {
+    margin-bottom: 36px;
+    padding: 2em;
+}
+.follow-us a {
+    padding: 0px 5%;
+    font-size: 30px;
+}
+.follow-us a:hover {
+    opacity: 0.5;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn
+    {   
+        width: 100%;
+        padding: 0;
+    }
+} */
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+    /* .topnav a{
+        float: none;
+        width: 100%;
+    } */
+
+    .dropdown {
+        float: none;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .image:hover{
+        opacity: 0.7;
+    }
+}
+/*EXTRA*/
+/* transform: matrix(0,1,1,0,0,0) */
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+} 
+.dropdown .dropdown-button {
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; 
+}
+
+.dropdown-content {
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+        float: none;
+        overflow: hidden;
+        width: 100%;
+    }
+    .dropdown-content{
+        position: relative;
+    }
+    .dropdown-content a{
+        text-align: center;
+    }
+}

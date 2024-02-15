@@ -1,0 +1,97 @@
+/* FoodBank-Page */
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: #1b1b1b;
+    font-family: 'Poppins';/* Lucida Bright */
+} 
+
+.content{
+    margin-top: 4em;
+    width: 60%;
+
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.content .card a{
+    width: auto;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.content .card a:hover{
+    opacity: 0.5;
+}
+
+.content .card img{
+    width: auto;
+    border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+button:hover {
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .content{
+        margin: 2px;
+    }
+
+    .content .card img{
+        width: 10em;
+        height: 10em;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.popup {
+    z-index:99;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin:auto;
+    padding:10px;
+    display: block;
+}
+
+.popup a img{
+    box-shadow: none;
+}
+ 
+.popup button{
+    margin: 1em;
+}
+
+.popup img{
+    width: 10em;
+    height: 10em;
+}
+
+
+/*.popup
+        {
+            z-index:99;
+            position:absolute;
+            background-color: whitesmoke;
+            border:1px black solid;
+            top:25%;
+            left:35%;
+            margin:auto;
+            padding:10px;
+        } */

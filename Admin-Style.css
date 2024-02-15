@@ -1,0 +1,118 @@
+        * { box-sizing: border-box; }
+
+        html, body {
+            background-color: #1b1b1b;
+            font-family: 'Poppins';
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            overflow: hidden;
+            background-color: #1b1b1b;
+            position: fixed;
+            width: 100%;
+            float: left;
+            display: block;
+            z-index: 999;
+        }
+        .header .logo{
+            height: 6em;
+            width: 6em;
+            float: left;
+            display: block;
+        } 
+        .logo:hover{
+            opacity: 0.5;
+        }
+        .header a{
+            text-decoration: none;
+        }
+        .header a h1{
+            margin-top: 0.2em;
+            color: #ffa31a;
+            padding-top: 0.2em;
+            padding-left: 4em;
+        }
+        
+        /* Top Navigation */
+        .topnav {
+            overflow: hidden;
+            background-color: #292929;
+            position: fixed;
+            top: 4.5em;
+            width: 100%;
+            z-index: 999;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            margin: 10px 4px;
+            padding: 4px 6px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+        }
+        .topnav a.active {
+            background-color: #ffa31a; 
+            color: #292929;
+            
+        }
+        .topnav a:hover {
+            background-color: #ffa31a; 
+            color: #292929;
+        }
+        
+        /* TABLE */
+        .content{   
+            padding-top: 8em;
+        }
+
+        .content table{
+            border: 1px solid #303030;
+            background-color: #303030;
+            border-collapse: separate;
+            width: 90%;
+            border-radius: 5px;
+        }
+
+        .content table caption{
+            color:#FFBF00;
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 0.5em;
+        }
+
+        .content table tr th, .content table tr td{
+            text-align: center;
+            padding: 8px;
+        }
+
+        .content table tr th{
+            color: #FFBF00;
+            border-top: none;
+        }
+
+        .content table tr td{
+            color: whitesmoke;
+        }
+
+        .content table tr td a{
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        /*Footer*/
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #1b1b1b;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            font-family: 'Times New Roman', Times, serif;   
+        }

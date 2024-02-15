@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+
+body {
+    background-color: #1b1b1b;
+    font-family: 'Poppins';/* Lucida Bright */
+} 
+
+table{
+    width: 100%;
+}
+
+tr td .table-bottom{
+    text-align: center;
+    
+}
+
+.content{
+    margin-top: 4em;
+}
+
+.leftcolumn{
+    float: left;
+    width: 40%;
+}
+
+.content .leftcolumn img{
+    width: 100%;
+}
+
+.rightcolumn {
+    float: right;
+    width:50%;
+    margin-right: 5em;
+
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+    
+.login-button, .signup-button{
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.to-other-page {
+    padding:5px;
+    background-color: #ccc;
+}
+.to-other-page a:hover {
+    opacity: 0.5;
+}
+
+span .psw {
+    margin: 15px 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .leftcolumn, .rightcolumn
+    {   
+        width: 100%;
+        padding: 0;
+        margin: 0; 
+    }
+
+    .content{
+        margin: 2px;
+    }
+
+    .content .leftcolumn img{
+        width: 10em;
+        height: 10em;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
